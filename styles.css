@@ -120,7 +120,7 @@ form > div:last-of-type {
 #length-div {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-100);
+    gap: var(--spacing-200);
 }
 
 .label-div {
@@ -186,4 +186,46 @@ form > div:last-of-type {
 #length::-moz-range-progress {
     background: var(--green-200);
     height: 8px;
+}
+
+/* Choices Div Styles */
+#choices-div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+}
+
+#choices-div > div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#choices-div input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--grey-200);
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+}
+
+#choices-div input:hover {
+    border: 2px solid var(--green-200);
+}
+
+#choices-div input:checked {
+    background: var(--green-200);
+    border: none;
+}
+
+#choices-div input:checked::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 12px;
+    background: url("images/icon-check.svg") center/contain no-repeat;
+    left: 3px;
+    top: 4.5px;
 }
