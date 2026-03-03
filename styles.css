@@ -1,3 +1,4 @@
+/* Root Styles */
 :root {
     --grey-200: #E6E5EA;
     --grey-600: #817D92;
@@ -26,6 +27,7 @@
     --spacing-2300: 184px;
 }
 
+/* General Styles */
 body {
     min-height: 100vh;
     margin: 0;
@@ -37,4 +39,26 @@ body {
     font-family: 'JetBrains Mono', sans-serif;
     font-size: 16px;
     line-height: 20px;
+    background: var(--gradient-1);
+    padding: var(--spacing-200);
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--grey-600);
+    margin: 0;
+}
+
+/* Main Section Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+}
+
+main > div {
+    background-color: var(--grey-800);
+    padding: var(--spacing-200);
 }
