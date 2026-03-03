@@ -51,6 +51,15 @@ h1 {
     margin: 0;
 }
 
+label, p {
+    margin: 0;
+}
+
+label {
+    color: var(--grey-200);
+    font-weight: bold;
+}
+
 /* Main Section Styles */
 main {
     display: flex;
@@ -59,7 +68,7 @@ main {
     width: 100%;
 }
 
-main > div {
+main > div, main > form {
     background-color: var(--grey-800);
     padding: var(--spacing-200);
 }
@@ -92,4 +101,89 @@ main > div {
 
 #result-div img {
     height: 20px;
+}
+
+/* Form Section Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-400);
+}
+
+form > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+}
+
+/* Length Div Styles */
+#length-div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+}
+
+.label-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: var(--spacing-200);
+}
+
+#length-text {
+    color: var(--green-200);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+#length {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+}
+
+#length::-webkit-slider-runnable-track {
+    background: var(--grey-850);
+    height: 8px;
+}
+
+#length::-moz-range-track {
+    background: var(--grey-850);
+    height: 8px;
+}
+
+#length::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -11px;
+    background-color: var(--grey-200);
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+}
+
+#length::-moz-range-thumb {
+    border: none;
+    background-color: var(--grey-200);
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+}
+
+#length:focus::-webkit-slider-thumb {
+    background-color: var(--grey-850);
+    border: 2px solid var(--green-200);
+}
+
+#length:focus::-moz-range-thumb {
+    background-color: var(--grey-850);
+    border: 2px solid var(--green-200);
+}
+
+#length::-moz-range-progress {
+    background: var(--green-200);
+    height: 8px;
 }
