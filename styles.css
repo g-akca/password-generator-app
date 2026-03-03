@@ -229,3 +229,28 @@ form > div:last-of-type {
     left: 3px;
     top: 4.5px;
 }
+
+/* Strength Div Styles */
+#strength-div {
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey-850);
+}
+
+#strength-div > p {
+    color: var(--grey-600);
+    font-weight: bold;
+}
+
+#strength-grid {
+    height: 28px;
+    display: grid;
+    grid-template-columns: 10px 10px 10px 10px;
+    column-gap: var(--spacing-100);
+}
+
+.strength-bar {
+    border: 2px solid var(--grey-200);
+}
