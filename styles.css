@@ -18,6 +18,7 @@
     --spacing-200: 16px;
     --spacing-300: 24px;
     --spacing-400: 32px;
+    --spacing-500: 40px;
     --spacing-700: 56px;
     --spacing-1000: 80px;
     --spacing-1300: 104px;
@@ -68,7 +69,7 @@ main {
     width: 100%;
 }
 
-main > div, main > form {
+main > div, form {
     background-color: var(--grey-800);
     padding: var(--spacing-200);
 }
@@ -82,7 +83,6 @@ main > div, main > form {
 }
 
 #password {
-    height: var(--spacing-400);
     box-sizing: border-box;
     flex-grow: 1;
     min-width: 0;
@@ -198,7 +198,7 @@ form > div:last-of-type {
 #choices-div > div {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: var(--spacing-200);
 }
 
 #choices-div input {
@@ -263,8 +263,84 @@ form > div:last-of-type {
     font-family: inherit;
     line-height: inherit;
     font-weight: bold;
+    border: none;
 }
 
 #generate-btn img {
     margin-left: 8px;
+}
+
+/* Tablet Responsive Styles */
+@media screen and (min-width: 376px) {
+    body {
+        gap: var(--spacing-400);
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    label {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    main {
+        max-width: 540px;
+        gap: var(--spacing-300);
+    }
+
+    #result-div {
+        padding: var(--spacing-200) var(--spacing-400);
+    }
+
+    #password {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    #result-div img {
+        height: 24px;
+    }
+
+    form {
+        padding: var(--spacing-300) var(--spacing-400) var(--spacing-500);
+    }
+
+    form > div:last-of-type {
+        gap: var(--spacing-400);
+    }
+
+    #length-div {
+        gap: var(--spacing-300);
+    }
+
+    .label-div {
+        margin-right: 0;
+    }
+
+    #length-text {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    #choices-div > div {
+        gap: var(--spacing-300);
+    }
+
+    #strength-div {
+        padding: 24px 32px;
+    }
+
+    #strength-div > p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    #generate-btn {
+        height: 65px;
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
