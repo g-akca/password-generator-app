@@ -277,6 +277,19 @@ form > div:last-of-type {
     font-weight: bold;
 }
 
+#strength-div > div {
+    display: flex;
+    gap: var(--spacing-200);
+    align-items: center;
+}
+
+#strength-text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: var(--grey-200);
+}
+
 #strength-grid {
     height: 28px;
     display: grid;
@@ -286,6 +299,26 @@ form > div:last-of-type {
 
 .strength-bar {
     border: 2px solid var(--grey-200);
+}
+
+.red-bar {
+    background-color: var(--red-500);
+    border: none;
+}
+
+.orange-bar {
+    background-color: var(--orange-400);
+    border: none;
+}
+
+.yellow-bar {
+    background-color: var(--yellow-300);
+    border: none;
+}
+
+.green-bar {
+    background-color: var(--green-200);
+    border: none;
 }
 
 /* Generate Button Styles */
@@ -380,11 +413,17 @@ form > div:last-of-type {
 
     #strength-div {
         padding: 24px 32px;
+        height: 32px;
     }
 
     #strength-div > p {
         font-size: 18px;
         line-height: 24px;
+    }
+
+    #strength-text {
+        font-size: 24px;
+        line-height: 32px;
     }
 
     #generate-btn {
