@@ -99,8 +99,14 @@ main > div, form {
     color: var(--grey-700);
 }
 
-#result-div img {
-    height: 20px;
+#result-div svg {
+    fill: var(--green-200);
+    flex-shrink: 0;
+}
+
+#result-div svg:hover {
+    fill: white;
+    cursor: pointer;
 }
 
 /* Form Section Styles */
@@ -165,12 +171,22 @@ form > div:last-of-type {
     border-radius: 100%;
 }
 
+#length::-webkit-slider-thumb:hover {
+    background-color: var(--grey-850);
+    border: 2px solid var(--green-200);
+}
+
 #length::-moz-range-thumb {
     border: none;
     background-color: var(--grey-200);
     height: 28px;
     width: 28px;
     border-radius: 100%;
+}
+
+#length::-moz-range-thumb:hover {
+    background-color: var(--grey-850);
+    border: 2px solid var(--green-200);
 }
 
 #length:focus::-webkit-slider-thumb {
@@ -266,8 +282,19 @@ form > div:last-of-type {
     border: none;
 }
 
-#generate-btn img {
+#generate-btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--green-200);
+    color: var(--green-200);
+    cursor: pointer;
+}
+
+#generate-btn svg {
     margin-left: 8px;
+}
+
+#generate-btn:hover svg {
+    fill: var(--green-200);
 }
 
 /* Tablet Responsive Styles */
@@ -300,7 +327,7 @@ form > div:last-of-type {
         line-height: 42px;
     }
 
-    #result-div img {
+    #result-div svg {
         height: 24px;
     }
 
