@@ -64,7 +64,7 @@ copyBtn.addEventListener("click", () => {
     password.select();
     password.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(password.value);
-    copiedText.hidden = false;
+    copiedText.classList.add("show");
 });
 
 lengthInput.addEventListener("input", () => {
@@ -106,5 +106,5 @@ generateBtn.addEventListener("click", () => {
     }
 
     password.value = generatedPassword;
-    copiedText.hidden = true;
+    copiedText.classList.remove("show");
 });
