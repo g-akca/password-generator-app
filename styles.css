@@ -119,11 +119,13 @@ main > div, form {
 #result-div svg {
     fill: var(--green-200);
     flex-shrink: 0;
+    transition: transform 0.3s ease;
 }
 
 #result-div svg:hover {
     fill: white;
     cursor: pointer;
+    transform: scale(110%);
 }
 
 /* Form Section Styles */
@@ -186,6 +188,7 @@ form > div:last-of-type {
     height: 28px;
     width: 28px;
     border-radius: 100%;
+    transition: background-color 0.3s ease;
 }
 
 #length::-webkit-slider-thumb:hover {
@@ -199,6 +202,7 @@ form > div:last-of-type {
     height: 28px;
     width: 28px;
     border-radius: 100%;
+    transition: background-color 0.3s ease;
 }
 
 #length::-moz-range-thumb:hover {
@@ -242,6 +246,7 @@ form > div:last-of-type {
     cursor: pointer;
     position: relative;
     margin: 0;
+    transition: border 0.1s ease;
 }
 
 #choices-div input:hover {
@@ -330,6 +335,7 @@ form > div:last-of-type {
     line-height: inherit;
     font-weight: bold;
     border: none;
+    transition: 0.3s background-color ease, 0.3s color ease;
 }
 
 #generate-btn:hover {
@@ -341,6 +347,7 @@ form > div:last-of-type {
 
 #generate-btn svg {
     margin-left: 8px;
+    transition: 0.3s fill ease;
 }
 
 #generate-btn:hover svg {
