@@ -103,6 +103,19 @@ main > div, form {
     outline: none;
 }
 
+#result-div > div {
+    display: flex;
+    gap: var(--spacing-200);
+    align-items: center;
+}
+
+#copied-text {
+    color: var(--green-200);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
 #result-div svg {
     fill: var(--green-200);
     flex-shrink: 0;
@@ -329,6 +342,11 @@ form > div:last-of-type {
     #password {
         font-size: 32px;
         line-height: 42px;
+    }
+
+    #copied-text {
+        font-size: 18px;
+        line-height: 24px;
     }
 
     #result-div svg {
