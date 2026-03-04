@@ -99,6 +99,10 @@ main > div, form {
     color: var(--grey-700);
 }
 
+#password:focus {
+    outline: none;
+}
+
 #result-div svg {
     fill: var(--green-200);
     flex-shrink: 0;
