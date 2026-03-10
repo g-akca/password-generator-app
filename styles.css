@@ -41,7 +41,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     background: var(--gradient-1);
-    padding: var(--spacing-200);
+    padding: var(--spacing-500) var(--spacing-200);
     box-sizing: border-box;
 }
 
@@ -67,6 +67,7 @@ main {
     flex-direction: column;
     gap: var(--spacing-200);
     width: 100%;
+    max-width: 540px;
 }
 
 main > div, form {
@@ -365,7 +366,7 @@ form > div:last-of-type {
 }
 
 /* Tablet Responsive Styles */
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
     body {
         gap: var(--spacing-400);
     }
@@ -381,7 +382,6 @@ form > div:last-of-type {
     }
 
     main {
-        max-width: 540px;
         gap: var(--spacing-300);
     }
 
